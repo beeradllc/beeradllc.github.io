@@ -53,6 +53,12 @@ export default function Contact() {
         <div className={styles.contactInfo}>
           <h2>Contact Information</h2>
           <div className={styles.infoItem}>
+            <h3>📞 Phone</h3>
+            <p>
+              <a href="tel:8066329458">(806) 632-9458</a>
+            </p>
+          </div>
+          <div className={styles.infoItem}>
             <h3>📧 Email</h3>
             <p>
               <a href="mailto:Beeradllc@gmail.com">Beeradllc@gmail.com</a>
@@ -109,7 +115,7 @@ export default function Contact() {
                 id="phone"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="(123) 456-7890"
+                placeholder="(806) 632-9458"
               />
             </div>
 
