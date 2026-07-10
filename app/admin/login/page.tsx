@@ -15,15 +15,21 @@ export default function AdminLogin() {
     setLoading(true);
     setError('');
 
-    // Your admin password
-    const correctPassword = '2394';
+    try {
+      const response = await fetch('/api/admin', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
 
-    if (password === correctPassword) {
-      // Store auth token in localStorage
-      localStorage.setItem('adminAuth', 'true');
-      router.push('/admin');
-    } else {
-      setError('Invalid password. Please try again.');
+      if (response.ok) {
+        localStorage.setItem('adminAuth', 'true');
+        router.push('/admin');
+      } else {
+        setError('Invalid password. Please try again.');
+      }
+    } catch {
+      setError('Authentication failed. Please try again.');
     }
 
     setLoading(false);

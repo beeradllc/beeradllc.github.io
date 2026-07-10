@@ -1,6 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 // Configure your email service
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -26,14 +35,14 @@ export async function POST(request: NextRequest) {
     const mailOptions = {
       from: process.env.EMAIL_USER || 'Beeradllc@gmail.com',
       to: 'Beeradllc@gmail.com',
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `New Contact Form Submission from ${escapeHtml(name)}`,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        <p><strong>Phone:</strong> ${phone ? escapeHtml(phone) : 'Not provided'}</p>
         <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
       `,
     };
 
@@ -47,12 +56,12 @@ export async function POST(request: NextRequest) {
       subject: 'We received your message - BeeRad LLC',
       html: `
         <h2>Thank you for contacting BeeRad LLC!</h2>
-        <p>Hi ${name},</p>
+        <p>Hi ${escapeHtml(name)},</p>
         <p>We received your message and will get back to you as soon as possible.</p>
         <p>Your message:</p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
         <hr>
-        <p>BeeRad LLC<br>Mobile Equipment Repair & Diagnostics<br>Lubbock, Texas</p>
+        <p>BeeRad LLC<br>Mobile Equipment Repair &amp; Diagnostics<br>Lubbock, Texas</p>
       `,
     };
 
