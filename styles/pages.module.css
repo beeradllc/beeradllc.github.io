@@ -329,9 +329,6 @@
   margin-bottom: 1rem;
 }
 
-.aboutValues {
-  /* inherits */
-}
 
 .valuesList {
   display: flex;
@@ -427,9 +424,6 @@
 }
 
 /* ===== Contact Form ===== */
-.contactFormWrapper {
-  /* inherits */
-}
 
 .contactForm {
   display: flex;

@@ -1,6 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+function escapeHtml(value: unknown): string {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -25,6 +34,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safePhone = escapeHtml(phone);
+    const safeService = escapeHtml(service);
+    const safeMessage = escapeHtml(message);
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -37,20 +52,20 @@ export async function POST(request: NextRequest) {
       from: emailUser,
       to: emailTo,
       replyTo: email,
-      subject: `BeeRad LLC Contact Form: ${service ? `[${service}] ` : ''}${name}`,
+      subject: `BeeRad LLC Contact Form: ${safeService ? `[${safeService}] ` : ''}${safeName}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #ffd700; background: #111; padding: 20px; margin: 0;">
             New Contact Form Submission
           </h2>
           <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd;">
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
-            <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-            <p><strong>Service Requested:</strong> ${service || 'Not specified'}</p>
+            <p><strong>Name:</strong> ${safeName}</p>
+            <p><strong>Email:</strong> <a href="mailto:${safeEmail}">${safeEmail}</a></p>
+            <p><strong>Phone:</strong> ${safePhone || 'Not provided'}</p>
+            <p><strong>Service Requested:</strong> ${safeService || 'Not specified'}</p>
             <hr style="margin: 16px 0;" />
             <p><strong>Message:</strong></p>
-            <p style="white-space: pre-wrap;">${message}</p>
+            <p style="white-space: pre-wrap;">${safeMessage}</p>
           </div>
           <p style="font-size: 12px; color: #666; padding: 10px;">
             This message was sent from the BeeRad LLC website contact form.
