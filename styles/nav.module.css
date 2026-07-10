@@ -1,0 +1,130 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #111111;
+  border-bottom: 2px solid #ffd700;
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.navLogo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.logoAccent {
+  color: #ffd700;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.navLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #cccccc;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.navLink:hover {
+  color: #ffd700;
+  background-color: rgba(255, 215, 0, 0.05);
+}
+
+.navCta {
+  background-color: #ffd700;
+  color: #111111 !important;
+  font-weight: 700;
+  padding: 0.5rem 1.25rem;
+}
+
+.navCta:hover {
+  background-color: #e6c200;
+  color: #111111 !important;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #111111;
+    border-bottom: 2px solid #ffd700;
+    padding: 1rem;
+    gap: 0.25rem;
+  }
+
+  .navLinksOpen {
+    display: flex;
+  }
+
+  .navLink {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .navCta {
+    text-align: center;
+  }
+}
