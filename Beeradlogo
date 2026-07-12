@@ -1,0 +1,25 @@
+style>
+  /* add under .logo */
+  .brand-logo {
+      height: 1.8rem;
+      width: auto;
+      vertical-align: middle;
+      margin-right: 0.4rem;
+  }
+
+  /* add under .hero h1 */
+  .hero h1 .brand-logo {
+      height: 2.5rem;
+      margin-right: 0.5rem;
+  }
+</style>
+
+<!-- replace -->
+<div class="logo">🚜 BeeRad LLC</div>
+<!-- with -->
+<div class="logo"><img src= beerad logo.png" alt="BeeRad logo" class="brand-logo">BeeRad LLC</div>
+
+<!-- replace -->
+<h1>🚜 BeeRad LLC</h1>
+<!-- with -->
+<h1><img src="beerad logo.png" alt="BeeRad logo" class="brand-logo">BeeRad LLC</h1>
