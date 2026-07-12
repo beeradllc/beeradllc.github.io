@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeeRad LLC</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #ffd700;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
+      color: var(--text);
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(6px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      white-space: nowrap;
+    }
+
+    .brand-logo {
+      height: 1.8rem;
+      width: auto;
+      vertical-align: middle;
+      object-fit: contain;
+      display: inline-block;
+    }
+
+    .hero {
+      padding: 80px 0 50px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero h1 .brand-logo {
+      height: 2.5rem;
+      width: auto;
+    }
+
+    .hero p {
+      margin: 0 auto;
+      color: var(--muted);
+      max-width: 700px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 36px 0 70px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #f8fafc;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      text-align: center;
+      padding: 20px 0 40px;
+      font-size: 0.95rem;
+    }
+
+    a { color: #93c5fd; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <img src="assets/beerad%20logo.png" alt="BeeRad logo" class="brand-logo" />
+        BeeRad LLC
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>
+        <img src="assets/beerad%20logo.png" alt="BeeRad logo" class="brand-logo" />
+        BeeRad LLC
+      </h1>
+      <p>Welcome to BeeRad LLC. We build practical solutions with a focus on quality, reliability, and speed.</p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>What We Do</h3>
+        <p>Product development, process automation, and digital solutions tailored to your business.</p>
+      </article>
+      <article class="card">
+        <h3>How We Work</h3>
+        <p>Clear communication, fast iteration, and measurable outcomes from kickoff to launch.</p>
+      </article>
+      <article class="card">
+        <h3>Get in Touch</h3>
+        <p>Ready to start? Reach out and we’ll map out the next steps together.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> BeeRad LLC. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
