@@ -1,0 +1,81 @@
+/* styles.css - consolidated stylesheet for BeeRad LLC site */
+/* Nav / header */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background-color: #fff; line-height: 1.6; }
+header { background-color: #1a1a1a; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+header nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #ffd700; }
+header nav a { color: #fff; text-decoration: none; margin: 0 1.5rem; transition: color 0.25s ease; }
+header nav a:hover { color: #ffd700; }
+header nav a.active { color: #ffed4e; font-weight: 700; border-bottom: 2px solid #ffd700; padding-bottom: 0.25rem; }
+
+/* Layout */
+main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+section { margin: 3rem 0; }
+
+/* Hero / CTA */
+.hero { background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; padding: 4rem 2rem; border-radius: 8px; margin-bottom: 3rem; text-align: center; }
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; color: #ffd700; }
+.hero h1 img { max-width: 100%; height: auto; width: 400px; height: 232px; }
+.hero h2 { font-size: 2rem; margin-bottom: 1rem; color: #fff; }
+.hero p { font-size: 1.1rem; margin-bottom: 2rem; color: #ddd; }
+
+.btn { display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.3s; cursor: pointer; border: none; }
+.btn-primary { background-color: #ffd700; color: #1a1a1a; }
+.btn-primary:hover { background-color: #ffed4e; transform: translateY(-2px); }
+.btn-secondary { background-color: transparent; color: white; border: 2px solid #ffd700; }
+.btn-secondary:hover { background-color: #ffd700; color: #1a1a1a; }
+
+/* Features */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
+.feature-card { background: white; padding: 2rem; border-radius: 8px; border: 2px solid #ffd700; text-align: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.feature-card:hover { transform: translateY(-5px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+.feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+.feature-card h3 { color: #ffd700; margin-bottom: 0.5rem; }
+.feature-card p { color: #666; margin: 0; }
+
+/* Services */
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; background: #f8f9fa; padding: 2rem; border-radius: 8px; }
+.service-card { background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #ffd700; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.service-card h3 { color: #ffd700; margin-bottom: 0.5rem; }
+.service-card p { color: #666; margin: 0; }
+
+/* About */
+.about-section { background: #f8f9fa; padding: 2rem; border-radius: 8px; }
+.about-section p { color: #666; line-height: 1.8; margin-bottom: 1.5rem; }
+.about-section h3 { color: #ffd700; font-size: 1.3rem; margin-top: 1.5rem; margin-bottom: 1rem; }
+
+/* Projects-specific */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
+.project-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; }
+.project-card:hover { transform: translateY(-8px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.project-image { width: 100%; height: 250px; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: #ffd700; overflow: hidden; }
+.project-image img { width: 100%; height: 100%; object-fit: cover; }
+.project-info { padding: 1.5rem; }
+.project-info h3 { color: #ffd700; margin-bottom: 0.5rem; font-size: 1.3rem; }
+.project-info p { color: #666; margin-bottom: 1rem; }
+.project-category { display: inline-block; background-color: #ffd700; color: #1a1a1a; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
+
+/* CTA */
+.cta { background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; padding: 3rem 2rem; border-radius: 8px; text-align: center; margin: 3rem 0; }
+.cta h2 { color: #ffd700; font-size: 2rem; margin-bottom: 1rem; }
+.cta p { color: #ddd; margin-bottom: 2rem; }
+
+/* Footer */
+footer { background-color: #1a1a1a; color: #fff; padding: 2rem; text-align: center; margin-top: 3rem; }
+footer p { color: #ddd; }
+footer a { color: #ffd700; text-decoration: none; }
+footer a:hover { color: #ffed4e; }
+
+/* Headings */
+h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #ffd700; }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header nav { flex-direction: column; gap: 1rem; }
+  header nav a { margin: 0.5rem; }
+  .hero h1 { font-size: 2rem; }
+  .hero h1 img { width: 100%; max-width: 300px; height: auto; }
+  .hero h2 { font-size: 1.3rem; }
+  .gallery { grid-template-columns: 1fr; }
+}
