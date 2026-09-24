@@ -4,21 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeeRad LLC - Equipment Repair & Diagnostics</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%23ffd700'/><circle cx='32' cy='32' r='28' fill='%231a1a1a'/><circle cx='32' cy='32' r='10' fill='%23ffd700'/></svg>">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             color: #1a1a1a;
             background-color: #fff;
             line-height: 1.6;
         }
-
         header {
             background-color: #1a1a1a;
             color: #fff;
@@ -27,7 +20,6 @@
             top: 0;
             z-index: 100;
         }
-
         header nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -35,30 +27,15 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffd700;
-        }
-
+        .logo { font-size: 1.5rem; font-weight: bold; color: #ffd700; }
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 1.5rem;
             transition: color 0.3s;
         }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
+        nav a:hover { color: #ffd700; }
+        main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         .hero {
             background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
             color: white;
@@ -67,32 +44,10 @@
             margin-bottom: 3rem;
             text-align: center;
         }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #ffd700;
-        }
-
-        .hero h1 img {
-            max-width: 100%;
-            height: auto;
-            width: 400px;
-            height: 232px;
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #fff;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            color: #ddd;
-        }
-
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; color: #ffd700; }
+        .hero h1 img { max-width: 100%; width: 400px; height: auto; }
+        .hero h2 { font-size: 2rem; margin-bottom: 1rem; color: #fff; }
+        .hero p { font-size: 1.1rem; margin-bottom: 2rem; color: #ddd; }
         .btn {
             display: inline-block;
             padding: 0.8rem 2rem;
@@ -101,38 +56,17 @@
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s;
-            cursor: pointer;
-            border: none;
         }
-
-        .btn-primary {
-            background-color: #ffd700;
-            color: #1a1a1a;
-        }
-
-        .btn-primary:hover {
-            background-color: #ffed4e;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: white;
-            border: 2px solid #ffd700;
-        }
-
-        .btn-secondary:hover {
-            background-color: #ffd700;
-            color: #1a1a1a;
-        }
-
+        .btn-primary { background-color: #ffd700; color: #1a1a1a; }
+        .btn-primary:hover { background-color: #ffed4e; transform: translateY(-2px); }
+        .btn-secondary { background-color: transparent; color: white; border: 2px solid #ffd700; }
+        .btn-secondary:hover { background-color: #ffd700; color: #1a1a1a; }
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
-
         .feature-card {
             background: white;
             padding: 2rem;
@@ -142,55 +76,10 @@
             transition: all 0.3s;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
-            color: #ffd700;
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-card p {
-            color: #666;
-            margin: 0;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #ffd700;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-card h3 {
-            color: #ffd700;
-            margin-bottom: 0.5rem;
-        }
-
-        .service-card p {
-            color: #666;
-            margin: 0;
-        }
-
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
+        .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .feature-card h3 { color: #ffd700; margin-bottom: 0.5rem; }
+        .feature-card p { color: #666; margin: 0; }
         .cta {
             background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
             color: white;
@@ -199,18 +88,8 @@
             text-align: center;
             margin: 3rem 0;
         }
-
-        .cta h2 {
-            color: #ffd700;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta p {
-            color: #ddd;
-            margin-bottom: 2rem;
-        }
-
+        .cta h2 { color: #ffd700; font-size: 2rem; margin-bottom: 1rem; }
+        .cta p { color: #ddd; margin-bottom: 2rem; }
         footer {
             background-color: #1a1a1a;
             color: #fff;
@@ -218,54 +97,15 @@
             text-align: center;
             margin-top: 3rem;
         }
-
-        footer p {
-            color: #ddd;
-        }
-
-        footer a {
-            color: #ffd700;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ffed4e;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #ffd700;
-        }
-
-        section {
-            margin: 3rem 0;
-        }
-
+        footer p { color: #ddd; }
+        footer a { color: #ffd700; text-decoration: none; }
+        footer a:hover { color: #ffed4e; }
+        section { margin: 3rem 0; }
         @media (max-width: 768px) {
-            header nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav a {
-                margin: 0.5rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero h1 img {
-                width: 100%;
-                max-width: 300px;
-                height: auto;
-            }
-
-            .hero h2 {
-                font-size: 1.3rem;
-            }
+            header nav { flex-direction: column; gap: 1rem; }
+            nav a { margin: 0.5rem; }
+            .hero h1 { font-size: 2rem; }
+            .hero h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
@@ -276,7 +116,7 @@
             <div>
                 <a href="index.html#home">Home</a>
                 <a href="projects.html">Projects</a>
-                <a href="index.html#services">Services</a>
+                <a href="services.html">Services</a>
                 <a href="about.html">About</a>
                 <a href="index.html#contact">Contact</a>
                 <a href="privacy-policy.html">Privacy Policy</a>
@@ -286,66 +126,20 @@
 
     <main>
         <section class="hero" id="home">
-            <h1><img width="408" height="307" alt="Image" src="https://github.com/user-attachments/assets/4efecc7d-bff7-4b33-8ef5-dada1d9c45a4" /></h1>
+            <h1><img width="408" height="307" alt="BeeRad LLC logo" src="https://github.com/user-attachments/assets/4efecc7d-bff7-4b33-8ef5-dada1d9c45a4" /></h1>
             <h2>Professional Mobile Equipment Repair & Diagnostics</h2>
             <p>Fast, reliable service for all your heavy equipment needs in Lubbock, Texas</p>
-            <a href="#services" class="btn btn-primary">View Services</a>
+            <a href="services.html" class="btn btn-primary">View Services</a>
             <a href="#contact" class="btn btn-secondary">Contact Us</a>
         </section>
 
         <section id="why-us">
             <h2>Why Choose BeeRad LLC?</h2>
             <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Fast Service</h3>
-                    <p>Quick diagnostics and repairs to minimize downtime for your equipment.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Expert Technicians</h3>
-                    <p>Experienced professionals trained in all types of heavy equipment repair.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Mobile Service</h3>
-                    <p>We come to you! Mobile diagnostics and repairs on-site.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Competitive Pricing</h3>
-                    <p>Transparent pricing with no hidden fees for our quality services.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service-card">
-                    <h3>🔍 Diagnostics</h3>
-                    <p>Comprehensive diagnostic services to quickly identify equipment issues.</p>
-                </div>
-                <div class="service-card">
-                    <h3>⚡ Electrical Systems</h3>
-                    <p>Expert repair and maintenance of electrical components and wiring.</p>
-                </div>
-                <div class="service-card">
-                    <h3>💧 Hydraulics</h3>
-                    <p>Hydraulic system repair, maintenance, and component replacement.</p>
-                </div>
-                <div class="service-card">
-                    <h3>❄️ Heating and Air conditioning</h3>
-                    <p>Heating, ventilation, and air conditioning system services.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🔨 General Repair</h3>
-                    <p>Complete repair and maintenance for all heavy equipment types.</p>
-                </div>
-                <div class="service-card">
-                    <h3>📋 Preventive Maintenance</h3>
-                    <p>Regular maintenance programs to keep equipment running smoothly.</p>
-                </div>
+                <div class="feature-card"><div class="feature-icon">⚡</div><h3>Fast Service</h3><p>Quick diagnostics and repairs to minimize downtime for your equipment.</p></div>
+                <div class="feature-card"><div class="feature-icon">🔧</div><h3>Expert Technicians</h3><p>Experienced professionals trained in all types of heavy equipment repair.</p></div>
+                <div class="feature-card"><div class="feature-icon">📱</div><h3>Mobile Service</h3><p>We come to you! Mobile diagnostics and repairs on-site.</p></div>
+                <div class="feature-card"><div class="feature-icon">💰</div><h3>Competitive Pricing</h3><p>Transparent pricing with no hidden fees for our quality services.</p></div>
             </div>
         </section>
 
@@ -373,6 +167,5 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-18269641724');
 </script>
