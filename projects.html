@@ -17,7 +17,7 @@
   <style>
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#1a1a1a;background:#fff;line-height:1.7}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#1a1a1a;background:#f5efe5;line-height:1.7}
   header{background:#1a1a1a;color:#fff;padding:1rem 2rem;position:sticky;top:0;z-index:100}
   header nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
   .logo{font-size:1.5rem;font-weight:800;color:#ffd700}
@@ -38,36 +38,33 @@
   h2{font-size:2rem;margin-bottom:1rem}
   h3{margin-bottom:.5rem}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
-  .card{background:#fff;padding:1.5rem;border-radius:9px;border:2px solid #ffd700;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+  .card{background:#fffaf2;padding:1.5rem;border-radius:9px;border:2px solid #ffd700;box-shadow:0 2px 8px rgba(0,0,0,.08)}
   .card p{color:#555}
   .cta{background:linear-gradient(135deg,#1a1a1a,#333);color:#fff;padding:3rem 2rem;border-radius:10px;text-align:center;margin:3rem 0}
   .cta h2{color:#ffd700}
   .cta a{color:#ffd700}
   .faq details{border-bottom:1px solid #ddd;padding:1rem 0}
   .faq summary{font-weight:800;cursor:pointer}
-  .content{background:#f8f9fa;border-radius:9px;padding:2rem}
+  .content{background:#f7f2ea;border-radius:9px;padding:2rem}
   .content p,.content li{margin-bottom:.9rem;color:#444}
   .content ul{padding-left:1.5rem}
   .project{overflow:hidden}
   .project img{width:100%;height:auto;display:block;border-radius:6px;margin-bottom:1rem}
   .badge{display:inline-block;background:#ffd700;color:#1a1a1a;padding:.25rem .7rem;border-radius:4px;font-size:.85rem;font-weight:800}
-  
-  /* Projects Gallery Grid */
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
-  .project-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.1);transition:transform .3s ease,box-shadow .3s ease;border:2px solid #ffd700}
+  .project-card{background:#fffaf2;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.1);transition:transform .3s ease,box-shadow .3s ease;border:2px solid #ffd700}
   .project-card:hover{transform:translateY(-8px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
-  .project-image{width:100%;height:250px;overflow:hidden;background:#f0f0f0;display:flex;align-items:center;justify-content:center}
+  .project-image{width:100%;height:250px;overflow:hidden;background:#f0ece3;display:flex;align-items:center;justify-content:center}
   .project-image img{width:100%;height:100%;object-fit:cover;display:block}
   .project-info{padding:1.5rem}
   .project-info h3{color:#1a1a1a;margin-bottom:.75rem;font-size:1.15rem}
   .project-category{display:inline-block;background:#ffd700;color:#1a1a1a;padding:.4rem .9rem;border-radius:5px;font-size:.8rem;font-weight:800;margin-bottom:1rem}
   .project-info p{color:#555;font-size:.95rem;line-height:1.6}
-  
   footer{background:#1a1a1a;color:#fff;padding:2rem;text-align:center;margin-top:3rem}
   footer p{color:#ddd;margin:.35rem}
   footer a{color:#ffd700}
   @media(max-width:1024px){.gallery{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:768px){header nav{justify-content:center}.logo{width:100%;text-align:center}nav a{margin:.35rem}.hero{padding:3rem 1.25rem}main{padding:1rem}.content{padding:1.25rem}.gallery{grid-template-columns:1fr}.project-image{height:200px}}
+  @media(max-width:768px){header nav{justify-content:center}.logo{width:100%;text-align:center}nav a{margin:.35rem}.hero{padding:3rem 1.25rem}main{padding:1rem}.content{padding:1.25rem}.gallery{grid-template-columns:1fr}}
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18269641724"></script>
   <script>
@@ -98,83 +95,82 @@
       <p>Examples of mobile diagnostics, electrical troubleshooting and repair work performed by BeeRad LLC.</p>
     </section>
 
-     <section id="projects">
-            <h2>Recent Project Portfolio</h2>
-            <div class="gallery">
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="AC system not working" src="https://github.com/user-attachments/assets/9102cf00-57d5-45e8-93b9-fe6c198baa41" /></div>
-                    <div class="project-info">
-                        <h3>AC system not working and active open circuit code</h3>
-                        <span class="project-category">Diagnostics</span>
-                        <p>Customer complained of AC not working, found blocked ducts, low on freon and very dirty. Customer complained of an active code and machine derated after diagnosing the issue; found a bad engine controller connector that required securing the terminal pin correctly.</p>
-                    </div>
-                </div>
+    <section id="projects">
+      <h2>Recent Project Portfolio</h2>
+      <div class="gallery">
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="AC system not working" src="https://github.com/user-attachments/assets/9102cf00-57d5-45e8-93b9-fe6c198baa41" /></div>
+          <div class="project-info">
+            <h3>AC system not working and active open circuit code</h3>
+            <span class="project-category">Diagnostics</span>
+            <p>Customer complained of AC not working, found blocked ducts, low on freon and very dirty. Customer complained of an active code and machine derated after diagnosing the issue.</p>
+          </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="AC system diagnosis" src="https://github.com/user-attachments/assets/39aa0e20-2d79-419b-bfa2-81a1380c6ce0" /></div>
-                    <div class="project-info">
-                        <h3>AC system inspection</h3>
-                        <span class="project-category">Diagnostics</span>
-                        <p>Detailed inspection and diagnostic work on AC system components to identify blockages and electrical issues.</p>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="AC system diagnosis" src="https://github.com/user-attachments/assets/39aa0e20-2d79-419b-bfa2-81a1380c6ce0" /></div>
+          <div class="project-info">
+            <h3>AC system inspection</h3>
+            <span class="project-category">Diagnostics</span>
+            <p>Detailed inspection and diagnostic work on AC system components to identify blockages and electrical issues.</p>
+          </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="Electrical rewiring" src="https://github.com/user-attachments/assets/e43b153b-b4b1-4534-9b98-88cf4ff2fee1" /></div>
-                    <div class="project-info">
-                        <h3>Rewiring</h3>
-                        <span class="project-category">Electrical Systems</span>
-                        <p>Had to diagnose electrical issues and rewire the damaged circuits.</p>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="Electrical rewiring" src="https://github.com/user-attachments/assets/e43b153b-b4b1-4534-9b98-88cf4ff2fee1" /></div>
+          <div class="project-info">
+            <h3>Rewiring</h3>
+            <span class="project-category">Electrical Systems</span>
+            <p>Had to diagnose electrical issues and rewire the damaged circuits.</p>
+          </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="Loader hydraulic cylinders" src="https://github.com/user-attachments/assets/f97215e4-e68f-4843-8657-ae085d302b1f" /></div>
-                    <div class="project-info">
-                        <h3>Loader hydraulic cylinders drifting</h3>
-                        <span class="project-category">Hydraulics</span>
-                        <p>Customer complained of loader drift. After diagnosing the hydraulic system, found damaged seal on the cylinder piston caused by a bent rod.</p>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="Loader hydraulic cylinders" src="https://github.com/user-attachments/assets/f97215e4-e68f-4843-8657-ae085d302b1f" /></div>
+          <div class="project-info">
+            <h3>Loader hydraulic cylinders drifting</h3>
+            <span class="project-category">Hydraulics</span>
+            <p>Customer complained of loader drift. After diagnosing the hydraulic system, found damaged seal on the cylinder piston caused by a bent rod.</p>
+          </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="Engine in-frame repair" src="https://github.com/user-attachments/assets/3a820472-3f49-47d7-ba16-d665f2fcb424" /></div>
-                    <div class="project-info">
-                        <h3>Engine in-frame repair</h3>
-                        <span class="project-category">General Repair</span>
-                        <p>An in-frame engine repair and hand polishing of a crankshaft. Diesel engine.</p>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="Engine in-frame repair" src="https://github.com/user-attachments/assets/3a820472-3f49-47d7-ba16-d665f2fcb424" /></div>
+          <div class="project-info">
+            <h3>Engine in-frame repair</h3>
+            <span class="project-category">General Repair</span>
+            <p>An in-frame engine repair and hand polishing of a crankshaft. Diesel engine.</p>
+          </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="Cleaning of AC system" src="https://github.com/user-attachments/assets/415a1851-1be8-478b-b085-5754267b82ec" /></div>
-                    <div class="project-info">
-                        <h3>Cleaning of AC system</h3>
-                        <span class="project-category">Heating and Air Conditioning</span>
-                        <p>Customer complained of AC not working properly. After a few tests, found the AC system needed a new housing and cleaning.</p>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="Cleaning of AC system" src="https://github.com/user-attachments/assets/415a1851-1be8-478b-b085-5754267b82ec" /></div>
+          <div class="project-info">
+            <h3>Cleaning of AC system</h3>
+            <span class="project-category">Heating and Air Conditioning</span>
+            <p>Customer complained of AC not working properly. After a few tests, found the AC system needed a new housing and cleaning.</p>
+          </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="AC system housing" src="https://github.com/user-attachments/assets/63c26de2-f76b-40a0-b6ff-89152f2b92c7" /></div>
-                    <div class="project-info">
-                        <h3>AC system housing replacement</h3>
-                        <span class="project-category">Heating and Air Conditioning</span>
-                        <p>AC system housing replacement and thorough cleaning of system components.</p>
-                    </div>
-                </div>
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="AC system housing" src="https://github.com/user-attachments/assets/63c26de2-f76b-40a0-b6ff-89152f2b92c7" /></div>
+          <div class="project-info">
+            <h3>AC system housing replacement</h3>
+            <span class="project-category">Heating and Air Conditioning</span>
+            <p>AC system housing replacement and thorough cleaning of system components.</p>
+          </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="250" alt="Engine service" src="https://github.com/user-attachments/assets/94c49c82-e8f2-4408-9de0-87077de95253" /></div>
-                    <div class="project-info">
-                        <h3>Engine service</h3>
-                        <span class="project-category">Maintenance</span>
-                        <p>Performing maintenance on a Hino box truck engine.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <div class="project-card">
+          <div class="project-image"><img width="310" height="250" alt="Engine service" src="https://github.com/user-attachments/assets/94c49c82-e8f2-4408-9de0-87077de95253" /></div>
+          <div class="project-info">
+            <h3>Engine service</h3>
+            <span class="project-category">Maintenance</span>
+            <p>Performing maintenance on a Hino box truck engine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="content">
       <h2>Need Similar Equipment Diagnostics?</h2>
