@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Projects - BeeRad LLC</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg: #f5efe6;
+            --panel: #efe2c7;
+            --panel-soft: #fdfaf5;
+            --text: #181818;
+            --muted: #484848;
+            --black: #191919;
+            --gold: #d9a500;
+            --gold-light: #f3d14a;
+            --gold-deep: #b78200;
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #1a1a1a;
-            background-color: #f5efe6;
+            color: var(--text);
+            background-color: var(--bg);
             line-height: 1.6;
         }
-
         header {
-            background-color: #1a1a1a;
+            background-color: var(--black);
             color: #fff;
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
             z-index: 100;
         }
-
         header nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -34,78 +39,47 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffd700;
-        }
-
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--gold); }
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 1.5rem;
             transition: color 0.3s;
         }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
+        nav a:hover { color: var(--gold-light); }
+        main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            background: linear-gradient(135deg, #171717 0%, #333 100%);
             color: white;
             padding: 4rem 2rem;
             border-radius: 8px;
             margin-bottom: 3rem;
             text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
         }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #ffd700;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            color: #ddd;
-        }
-
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--gold); }
+        .hero p { font-size: 1.1rem; color: #ddd; }
         h2 {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 2rem;
-            color: #ffd700;
+            color: var(--gold-deep);
         }
-
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
-
         .project-card {
-            background: white;
+            background: var(--panel-soft);
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transition: all 0.3s;
+            border: 1px solid rgba(217,165,0,0.3);
         }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-        }
-
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); }
         .project-image {
             width: 100%;
             height: 250px;
@@ -114,61 +88,39 @@
             align-items: center;
             justify-content: center;
             font-size: 4rem;
-            color: #ffd700;
+            color: var(--gold);
             overflow: hidden;
         }
-
         .project-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-
         .project-info {
             padding: 1.5rem;
         }
-
-        .project-info h3 {
-            color: #ffd700;
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .project-info p {
-            color: #666;
-            margin-bottom: 1rem;
-        }
-
+        .project-info h3 { color: var(--gold-deep); margin-bottom: 0.5rem; font-size: 1.3rem; }
+        .project-info p { color: var(--muted); margin-bottom: 1rem; }
         .project-category {
             display: inline-block;
-            background-color: #ffd700;
-            color: #1a1a1a;
+            background-color: var(--gold);
+            color: #111;
             padding: 0.3rem 0.8rem;
             border-radius: 4px;
             font-size: 0.85rem;
             font-weight: bold;
         }
-
         .cta {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            background: linear-gradient(135deg, #191919 0%, #2e2e2e 100%);
             color: white;
             padding: 3rem 2rem;
             border-radius: 8px;
             text-align: center;
             margin: 3rem 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
-
-        .cta h2 {
-            color: #ffd700;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta p {
-            color: #ddd;
-            margin-bottom: 2rem;
-        }
-
+        .cta h2 { color: var(--gold); font-size: 2rem; margin-bottom: 1rem; }
+        .cta p { color: #ddd; margin-bottom: 2rem; }
         .btn {
             display: inline-block;
             padding: 0.8rem 2rem;
@@ -179,60 +131,26 @@
             transition: all 0.3s;
             cursor: pointer;
             border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
-
-        .btn-primary {
-            background-color: #ffd700;
-            color: #1a1a1a;
-        }
-
-        .btn-primary:hover {
-            background-color: #ffed4e;
-            transform: translateY(-2px);
-        }
-
+        .btn-primary { background-color: var(--gold); color: #111; }
+        .btn-primary:hover { background-color: var(--gold-light); transform: translateY(-2px); }
         footer {
-            background-color: #1a1a1a;
+            background-color: var(--black);
             color: #fff;
             padding: 2rem;
             text-align: center;
             margin-top: 3rem;
         }
-
-        footer p {
-            color: #ddd;
-        }
-
-        footer a {
-            color: #ffd700;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ffed4e;
-        }
-
-        section {
-            margin: 3rem 0;
-        }
-
+        footer p { color: #ddd; }
+        footer a { color: var(--gold); text-decoration: none; }
+        footer a:hover { color: var(--gold-light); }
+        section { margin: 3rem 0; }
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav a {
-                margin: 0.5rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
+            nav { flex-direction: column; gap: 1rem; }
+            nav a { margin: 0.5rem; }
+            .hero h1 { font-size: 2rem; }
+            .gallery { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -343,6 +261,5 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-18269641724');
 </script>

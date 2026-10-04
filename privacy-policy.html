@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - BeeRad LLC</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg: #f5efe6;
+            --panel: #efe2c7;
+            --panel-soft: #fdfaf5;
+            --text: #181818;
+            --muted: #484848;
+            --black: #191919;
+            --gold: #d9a500;
+            --gold-light: #f3d14a;
+            --gold-deep: #b78200;
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #1a1a1a;
-            background-color: #f5efe6;
+            color: var(--text);
+            background-color: var(--bg);
             line-height: 1.6;
         }
-
         header {
-            background-color: #1a1a1a;
+            background-color: var(--black);
             color: #fff;
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
             z-index: 100;
         }
-
         header nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -36,119 +41,57 @@
             flex-wrap: wrap;
             gap: 1rem;
         }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffd700;
-        }
-
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--gold); }
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 1rem;
             transition: color 0.3s;
         }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
+        nav a:hover { color: var(--gold-light); }
+        main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
         .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            background: linear-gradient(135deg, #171717 0%, #333 100%);
             color: white;
             padding: 4rem 2rem;
             border-radius: 8px;
             margin-bottom: 3rem;
             text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
         }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.75rem;
-            color: #ffd700;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: #ddd;
-        }
-
+        .hero h1 { font-size: 2.8rem; margin-bottom: 0.75rem; color: var(--gold); }
+        .hero p { font-size: 1.1rem; color: #ddd; }
         .content {
-            background: #efe5d6;
+            background: var(--panel);
             border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border: 1px solid rgba(217,165,0,0.3);
         }
-
-        .content h2 {
-            color: #1a1a1a;
-            margin: 1.75rem 0 0.75rem;
-            font-size: 1.5rem;
-        }
-
+        .content h2 { color: #1a1a1a; margin: 1.75rem 0 0.75rem; font-size: 1.5rem; }
         .content h3 {
-            color: #ffd700;
+            color: var(--gold-deep);
             margin-top: 1.5rem;
             margin-bottom: 0.5rem;
             font-size: 1.15rem;
         }
-
-        .content p,
-        .content li {
-            color: #444;
-            line-height: 1.8;
-            margin-bottom: 0.8rem;
-        }
-
-        ul {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        a {
-            color: #0066cc;
-        }
-
+        .content p, .content li { color: var(--muted); line-height: 1.8; margin-bottom: 0.8rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+        a { color: #005bc4; }
         footer {
-            background-color: #1a1a1a;
+            background-color: var(--black);
             color: #fff;
             padding: 2rem;
             text-align: center;
             margin-top: 3rem;
         }
-
-        footer p {
-            color: #ddd;
-        }
-
-        footer a {
-            color: #ffd700;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ffed4e;
-        }
-
+        footer p { color: #ddd; }
+        footer a { color: var(--gold); text-decoration: none; }
+        footer a:hover { color: var(--gold-light); }
         @media (max-width: 768px) {
-            header nav {
-                justify-content: center;
-            }
-
-            nav a {
-                margin: 0.25rem 0.75rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
+            header nav { justify-content: center; }
+            nav a { margin: 0.25rem 0.75rem; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
