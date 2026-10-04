@@ -1,348 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - BeeRad LLC</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Equipment Repair Projects | BeeRad LLC</title>
+<meta name="description" content="See examples of BeeRad mobile equipment diagnostics, electrical repair and heavy equipment service work in Lubbock, Texas.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://beeradllc.com/projects.html">
+<meta name="theme-color" content="#1a1a1a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Equipment Repair Projects | BeeRad LLC">
+<meta property="og:description" content="See examples of BeeRad mobile equipment diagnostics, electrical repair and heavy equipment service work in Lubbock, Texas.">
+<meta property="og:url" content="https://beeradllc.com/projects.html">
+<meta property="og:site_name" content="BeeRad LLC">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://beeradllc.com/#business",
+      "name": "BeeRad LLC",
+      "url": "https://beeradllc.com/",
+      "telephone": "+1-806-632-9458",
+      "email": "beeradllc@gmail.com",
+      "image": "https://github.com/user-attachments/assets/4efecc7d-bff7-4b33-8ef5-dada1d9c45a4",
+      "description": "Mobile heavy equipment repair and diagnostics serving Lubbock, Texas and surrounding West Texas areas. On-site service for farm, construction and off-road equipment; CAT off-road equipment excluded.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lubbock",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Lubbock"
+        },
+        {
+          "@type": "State",
+          "name": "Texas"
         }
+      ],
+      "priceRange": "$$",
+      "knowsAbout": [
+        "heavy equipment repair",
+        "equipment diagnostics",
+        "construction equipment",
+        "farm equipment",
+        "off-road equipment",
+        "electrical diagnostics",
+        "hydraulic repair",
+        "HVAC repair",
+        "preventive maintenance"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "BeeRad Equipment Repair Projects",
+      "url": "https://beeradllc.com/projects.html",
+      "about": {
+        "@id": "https://beeradllc.com/#business"
+      }
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#1a1a1a;background:#fff;line-height:1.7}
+header{background:#1a1a1a;color:#fff;padding:1rem 2rem;position:sticky;top:0;z-index:100}
+header nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.logo{font-size:1.5rem;font-weight:800;color:#ffd700}
+.logo a{color:inherit;text-decoration:none}
+nav a{color:#fff;text-decoration:none;margin:0 .7rem;font-weight:600}
+nav a:hover,nav a:focus{color:#ffd700}
+main{max-width:1200px;margin:auto;padding:2rem}
+.hero{background:linear-gradient(135deg,#1a1a1a,#333);color:#fff;padding:4rem 2rem;border-radius:10px;margin-bottom:3rem;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1rem;color:#ffd700}
+.hero h2{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:1rem;color:#fff}
+.hero p{font-size:1.12rem;color:#ddd;max-width:850px;margin:0 auto 1.5rem}
+.hero-logo{max-width:400px;width:100%;height:auto;margin-bottom:1rem}
+.btn{display:inline-block;padding:.85rem 1.5rem;margin:.4rem;border-radius:5px;text-decoration:none;font-weight:800}
+.btn-primary{background:#ffd700;color:#1a1a1a}
+.btn-secondary{background:transparent;color:#fff;border:2px solid #ffd700}
+.btn:hover{transform:translateY(-2px)}
+section{margin:3rem 0}
+h2{font-size:2rem;margin-bottom:1rem}
+h3{margin-bottom:.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.card{background:#fff;padding:1.5rem;border-radius:9px;border:2px solid #ffd700;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card p{color:#555}
+.cta{background:linear-gradient(135deg,#1a1a1a,#333);color:#fff;padding:3rem 2rem;border-radius:10px;text-align:center;margin:3rem 0}
+.cta h2{color:#ffd700}
+.cta a{color:#ffd700}
+.faq details{border-bottom:1px solid #ddd;padding:1rem 0}
+.faq summary{font-weight:800;cursor:pointer}
+.content{background:#f8f9fa;border-radius:9px;padding:2rem}
+.content p,.content li{margin-bottom:.9rem;color:#444}
+.content ul{padding-left:1.5rem}
+.project{overflow:hidden}
+.project img{width:100%;height:auto;display:block;border-radius:6px;margin-bottom:1rem}
+.badge{display:inline-block;background:#ffd700;color:#1a1a1a;padding:.25rem .7rem;border-radius:4px;font-size:.85rem;font-weight:800}
+footer{background:#1a1a1a;color:#fff;padding:2rem;text-align:center;margin-top:3rem}
+footer p{color:#ddd;margin:.35rem}
+footer a{color:#ffd700}
+@media(max-width:768px){header nav{justify-content:center}.logo{width:100%;text-align:center}nav a{margin:.35rem}.hero{padding:3rem 1.25rem}main{padding:1rem}.content{padding:1.25rem}}
+</style>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #1a1a1a;
-            background-color: #fff;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        header nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffd700;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            color: white;
-            padding: 4rem 2rem;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #ffd700;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            color: #ddd;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #ffd700;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-image {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: #ffd700;
-            overflow: hidden;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .project-info {
-            padding: 1.5rem;
-        }
-
-        .project-info h3 {
-            color: #ffd700;
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .project-info p {
-            color: #666;
-            margin-bottom: 1rem;
-        }
-
-        .project-category {
-            display: inline-block;
-            background-color: #ffd700;
-            color: #1a1a1a;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-
-        .cta {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            color: white;
-            padding: 3rem 2rem;
-            border-radius: 8px;
-            text-align: center;
-            margin: 3rem 0;
-        }
-
-        .cta h2 {
-            color: #ffd700;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta p {
-            color: #ddd;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            margin: 0.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn-primary {
-            background-color: #ffd700;
-            color: #1a1a1a;
-        }
-
-        .btn-primary:hover {
-            background-color: #ffed4e;
-            transform: translateY(-2px);
-        }
-
-        footer {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        footer p {
-            color: #ddd;
-        }
-
-        footer a {
-            color: #ffd700;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ffed4e;
-        }
-
-        section {
-            margin: 3rem 0;
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav a {
-                margin: 0.5rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">BeeRad LLC</a></div>
-            <div>
-                <a href="index.html#home">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="index.html#contact">Contact</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Our Projects</h1>
-            <p>See the quality work we've completed for our valued clients</p>
-        </section>
-
-        <section id="projects">
-            <h2>Recent Project Portfolio</h2>
-            <div class="gallery">
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="410" alt="Image" src="https://github.com/user-attachments/assets/9102cf00-57d5-45e8-93b9-fe6c198baa41" /></div>
-                    <div class="project-image"><img width="308" height="409" alt="Image" src="https://github.com/user-attachments/assets/39aa0e20-2d79-419b-bfa2-81a1380c6ce0" /></div>
-                    <div class="project-info">
-                        <h3>AC system not working and active open circuit code.</h3>
-                        <span class="project-category">Diagnostics</span>
-                        <p>Customer complained of AC not working, found blocked ducts, low on freeon and very dirty.
-                        Customer complained of an active code and machine derated after diagnosing the issue; found a bad engine controller connector that required securing the terminal pin correctly.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"><img width="310" height="409" alt="Image" src="https://github.com/user-attachments/assets/e43b153b-b4b1-4534-9b98-88cf4ff2fee1" /></div>
-                    <div class="project-info">
-                        <h3>Rewiring</h3>
-                        <span class="project-category">Electrical Systems</span>
-                        <p>Had to diagnose electrical issues and rewire the damaged circuits.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"><img width="309" height="410" alt="Image" src="https://github.com/user-attachments/assets/f97215e4-e68f-4843-8657-ae085d302b1f" /></div>
-                    <div class="project-info">
-                        <h3>Loader hydraulic cylinders drifting</h3>
-                        <span class="project-category">Hydraulics</span>
-                        <p>Customer complained of loader drift. After diagnosing the hydraulic system, found damaged seal on the cylinder piston caused by a bent rod.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"><img width="312" height="414" alt="Image" src="https://github.com/user-attachments/assets/3a820472-3f49-47d7-ba16-d665f2fcb424" /></div>
-                    <div class="project-info">
-                        <h3>Engine in-frame repair.</h3>
-                        <span class="project-category">General Repair</span>
-                        <p>An in-frame engine repair and hand polishing of a crankshaft. Diesel engine.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"><img width="305" height="408" alt="Image" src="https://github.com/user-attachments/assets/415a1851-1be8-478b-b085-5754267b82ec" /></div>
-                    <div class="project-image"><img width="305" height="408" alt="Image" src="https://github.com/user-attachments/assets/63c26de2-f76b-40a0-b6ff-89152f2b92c7" /></div>
-                    <div class="project-info">
-                        <h3>Cleaning of AC system</h3>
-                        <span class="project-category">Heating and Air Conditioning</span>
-                        <p>Customer complained of AC not working properly. After a few tests, found the AC system needed a new housing and cleaning.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"><img width="307" height="205" alt="Image" src="https://github.com/user-attachments/assets/94c49c82-e8f2-4408-9de0-87077de95253" /></div>
-                    <div class="project-info">
-                        <h3>Engine service</h3>
-                        <span class="project-category">Maintenance</span>
-                        <p>Performing maintenance on a Hino box truck engine.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta" id="contact">
-            <h2>Ready to Get Your Equipment Fixed?</h2>
-            <p>Contact BeeRad LLC today for fast, professional service</p>
-            <h3 style="color: #ffd700; font-size: 1.5rem;">📞 <a href="tel:+18066329458" style="color: #ffd700; text-decoration: none;">(806) 632-9458</a></h3>
-            <h3 style="color: #ffd700; font-size: 1.2rem; margin-top: 0.75rem;">✉️ <a href="mailto:beeradllc@gmail.com" style="color: #ffd700; text-decoration: none;">beeradllc@gmail.com</a></h3>
-            <p style="margin-top: 1rem;">Located in Lubbock, Texas</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 BeeRad LLC. All rights reserved.</p>
-        <p>Professional Equipment Repair & Maintenance Services</p>
-        <p>📞 <a href="tel:+18066329458">(806) 632-9458</a></p>
-        <p>✉️ <a href="mailto:beeradllc@gmail.com">beeradllc@gmail.com</a></p>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
-    </footer>
-</body>
-</html>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18269641724"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18269641724');
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','AW-18269641724');
 </script>
+</head>
+<body>
+<header>
+<nav aria-label="Primary navigation">
+<div class="logo"><a href="index.html">BeeRad LLC</a></div>
+<div>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="about.html">About</a>
+<a href="index.html#contact">Contact</a>
+<a href="privacy-policy.html">Privacy</a>
+</div>
+</nav>
+</header>
+<main>
+
+<section class="hero"><h1>BeeRad Equipment Repair Projects</h1><p>Examples of mobile diagnostics, electrical troubleshooting and repair work performed by BeeRad LLC.</p></section>
+<section>
+<h2>Recent Diagnostic &amp; Repair Work</h2>
+<div class="grid">
+<article class="card project">
+<img src="https://github.com/user-attachments/assets/9102cf00-57d5-45e8-93b9-fe6c198baa41" width="310" height="410" loading="lazy" alt="BeeRad equipment air conditioning diagnostic and repair project in Lubbock Texas">
+<img src="https://github.com/user-attachments/assets/39aa0e20-2d79-419b-bfa2-81a1380c6ce0" width="308" height="409" loading="lazy" alt="BeeRad equipment diagnostic project involving an engine controller connector and active fault code">
+<h3>Air Conditioning &amp; Active Fault Diagnostics</h3>
+<span class="badge">Diagnostics</span>
+<p>Customer reported an A/C problem and an active code with machine derate symptoms. Inspection identified blocked ducts, low refrigerant and contamination. Diagnostic work also identified an engine controller connector issue requiring the terminal pin to be secured correctly.</p>
+</article>
+<article class="card project">
+<img src="https://github.com/user-attachments/assets/e43b153b-b4b1-4534-9b98-88cf4ff2fee1" width="310" height="409" loading="lazy" alt="BeeRad electrical wiring repair project on heavy equipment">
+<h3>Electrical Rewiring</h3>
+<span class="badge">Electrical Systems</span>
+<p>Electrical issues were diagnosed and damaged circuits were rewired to restore proper operation.</p>
+</article>
+</div>
+</section>
+<section class="content"><h2>Need Similar Equipment Diagnostics?</h2><p>BeeRad provides mobile diagnostics and repair for farm, construction and off-road equipment in Lubbock and surrounding West Texas areas.</p><p><a class="btn btn-primary" href="tel:+18066329458">Call BeeRad</a></p></section>
+
+</main>
+<footer>
+<p><strong>BeeRad LLC</strong> — Mobile Equipment Repair &amp; Diagnostics</p>
+<p>Lubbock, Texas and surrounding West Texas service areas</p>
+<p>Phone: <a href="tel:+18066329458">(806) 632-9458</a> · Email: <a href="mailto:beeradllc@gmail.com">beeradllc@gmail.com</a></p>
+<p><a href="privacy-policy.html">Privacy Policy</a></p>
+<p>&copy; 2026 BeeRad LLC. All rights reserved.</p>
+</footer>
+</body>
+</html>
