@@ -1,81 +1,90 @@
-/* styles.css - consolidated stylesheet for BeeRad LLC site */
-/* Nav / header */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background-color: #fff; line-height: 1.6; }
-header { background-color: #1a1a1a; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
-header nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 1.5rem; font-weight: bold; color: #ffd700; }
-header nav a { color: #fff; text-decoration: none; margin: 0 1.5rem; transition: color 0.25s ease; }
-header nav a:hover { color: #ffd700; }
-header nav a.active { color: #ffed4e; font-weight: 700; border-bottom: 2px solid #ffd700; padding-bottom: 0.25rem; }
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy | BeeRad LLC</title>
+  <meta name="description" content="BeeRad LLC privacy policy covering website information, cookies, analytics, Google Ads and customer inquiries.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://beeradllc.com/privacy-policy.html">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy Policy | BeeRad LLC">
+  <meta property="og:description" content="BeeRad LLC privacy policy covering website information, cookies, analytics, Google Ads and customer inquiries.">
+  <meta property="og:url" content="https://beeradllc.com/privacy-policy.html">
+  <meta property="og:site_name" content="BeeRad LLC">
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18269641724"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18269641724');
+  </script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <div class="logo"><a href="index.html">BeeRad LLC</a></div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
 
-/* Layout */
-main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-section { margin: 3rem 0; }
+  <main>
+    <section class="hero"><h1>Privacy Policy</h1><p>Effective date: October 3, 2026</p></section>
 
-/* Hero / CTA */
-.hero { background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; padding: 4rem 2rem; border-radius: 8px; margin-bottom: 3rem; text-align: center; }
-.hero h1 { font-size: 3rem; margin-bottom: 1rem; color: #ffd700; }
-.hero h1 img { max-width: 100%; height: auto; width: 400px; height: 232px; }
-.hero h2 { font-size: 2rem; margin-bottom: 1rem; color: #fff; }
-.hero p { font-size: 1.1rem; margin-bottom: 2rem; color: #ddd; }
+    <section class="content">
+      <p>BeeRad LLC values your privacy and is committed to protecting personal information shared with us through our website and services.</p>
 
-.btn { display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.3s; cursor: pointer; border: none; }
-.btn-primary { background-color: #ffd700; color: #1a1a1a; }
-.btn-primary:hover { background-color: #ffed4e; transform: translateY(-2px); }
-.btn-secondary { background-color: transparent; color: white; border: 2px solid #ffd700; }
-.btn-secondary:hover { background-color: #ffd700; color: #1a1a1a; }
+      <h2>1. Information We Collect</h2>
+      <p>We may collect information you provide directly, including your name, phone number, email address, service inquiries, message details, company information and equipment information relevant to the service request.</p>
+      <p>We may also collect limited technical information such as browser type, device type, IP address and website usage information.</p>
 
-/* Features */
-.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
-.feature-card { background: white; padding: 2rem; border-radius: 8px; border: 2px solid #ffd700; text-align: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-.feature-card:hover { transform: translateY(-5px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
-.feature-icon { font-size: 3rem; margin-bottom: 1rem; }
-.feature-card h3 { color: #ffd700; margin-bottom: 0.5rem; }
-.feature-card p { color: #666; margin: 0; }
+      <h2>2. How We Use Information</h2>
+      <ul>
+        <li>Respond to inquiries and estimate requests</li>
+        <li>Provide and improve repair and diagnostic services</li>
+        <li>Communicate about scheduling and service</li>
+        <li>Analyze website traffic and improve the user experience</li>
+        <li>Fulfill legal and business obligations</li>
+      </ul>
 
-/* Services */
-.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; background: #f8f9fa; padding: 2rem; border-radius: 8px; }
-.service-card { background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #ffd700; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-.service-card h3 { color: #ffd700; margin-bottom: 0.5rem; }
-.service-card p { color: #666; margin: 0; }
+      <h2>3. Cookies and Analytics</h2>
+      <p>Our website may use cookies and similar technologies. BeeRad may use Google Analytics or similar analytics tools to understand website usage and improve the site. Google Ads technologies may also be used for measurement and advertising purposes.</p>
 
-/* About */
-.about-section { background: #f8f9fa; padding: 2rem; border-radius: 8px; }
-.about-section p { color: #666; line-height: 1.8; margin-bottom: 1.5rem; }
-.about-section h3 { color: #ffd700; font-size: 1.3rem; margin-top: 1.5rem; margin-bottom: 1rem; }
+      <h2>4. Google Advertising</h2>
+      <p>Advertising and measurement services may use cookies or similar technologies to measure advertising performance, understand interactions and provide relevant advertising. Users can manage browser settings for cookies and opt-out where available.</p>
 
-/* Projects-specific */
-.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
-.project-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; }
-.project-card:hover { transform: translateY(-8px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-.project-image { width: 100%; height: 250px; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: #ffd700; overflow: hidden; }
-.project-image img { width: 100%; height: 100%; object-fit: cover; }
-.project-info { padding: 1.5rem; }
-.project-info h3 { color: #ffd700; margin-bottom: 0.5rem; font-size: 1.3rem; }
-.project-info p { color: #666; margin-bottom: 1rem; }
-.project-category { display: inline-block; background-color: #ffd700; color: #1a1a1a; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
+      <h2>5. Sharing Information</h2>
+      <p>BeeRad does not sell personal information. Information may be shared with trusted service providers needed to operate the website or business, when required by law, or to protect rights, property and safety.</p>
 
-/* CTA */
-.cta { background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; padding: 3rem 2rem; border-radius: 8px; text-align: center; margin: 3rem 0; }
-.cta h2 { color: #ffd700; font-size: 2rem; margin-bottom: 1rem; }
-.cta p { color: #ddd; margin-bottom: 2rem; }
+      <h2>6. Data Security</h2>
+      <p>BeeRad uses reasonable administrative, technical and physical safeguards, but no internet transmission or storage system can be guaranteed completely secure.</p>
 
-/* Footer */
-footer { background-color: #1a1a1a; color: #fff; padding: 2rem; text-align: center; margin-top: 3rem; }
-footer p { color: #ddd; }
-footer a { color: #ffd700; text-decoration: none; }
-footer a:hover { color: #ffed4e; }
+      <h2>7. Third-Party Links</h2>
+      <p>The website may link to third-party websites. BeeRad is not responsible for their privacy practices or content.</p>
 
-/* Headings */
-h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #ffd700; }
+      <h2>8. Your Choices</h2>
+      <p>You may disable cookies through your browser settings. Depending on applicable law, you may also have rights to access, correct or request deletion of personal information.</p>
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  header nav { flex-direction: column; gap: 1rem; }
-  header nav a { margin: 0.5rem; }
-  .hero h1 { font-size: 2rem; }
-  .hero h1 img { width: 100%; max-width: 300px; height: auto; }
-  .hero h2 { font-size: 1.3rem; }
-  .gallery { grid-template-columns: 1fr; }
-}
+      <h2>9. Contact</h2>
+      <p>Questions about this policy may be directed to BeeRad LLC at <a href="tel:+18066329458">(806) 632-9458</a> or <a href="mailto:beeradllc@gmail.com">beeradllc@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>BeeRad LLC</strong> — Mobile Equipment Repair &amp; Diagnostics</p>
+    <p>Lubbock, Texas and surrounding West Texas service areas</p>
+    <p>Phone: <a href="tel:+18066329458">(806) 632-9458</a> · Email: <a href="mailto:beeradllc@gmail.com">beeradllc@gmail.com</a></p>
+    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    <p>&copy; 2026 BeeRad LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
