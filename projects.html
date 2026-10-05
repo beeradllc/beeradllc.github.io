@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Equipment Repair Projects | BeeRad LLC</title>
-  <meta name="description" content="See examples of BeeRad mobile equipment diagnostics, electrical repair and heavy equipment service work in Lubbock, Texas.">
+  <meta name="description" content="See examples of BeeRad mobile equipment diagnostics, electrical repair and heavy equipment service work in Lubbock, Texas. Real project portfolio.">
+  <meta name="keywords" content="equipment repair projects, diagnostics examples, repair portfolio, Lubbock">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://beeradllc.com/projects.html">
+  <link rel="icon" type="image/png" href="Beerad.png">
   <meta name="theme-color" content="#1a1a1a">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Equipment Repair Projects | BeeRad LLC">
@@ -20,51 +22,49 @@
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#111111;background:#f8f3ea;line-height:1.7}
   header{background:#1a1a1a;color:#fff;padding:1rem 2rem;position:sticky;top:0;z-index:100}
   header nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
-  .logo{font-size:1.5rem;font-weight:800;color:#ffd700}
-  .logo a{color:inherit;text-decoration:none}
-  nav a{color:#fff;text-decoration:none;margin:0 .7rem;font-weight:600}
-  nav a:hover,nav a:focus{color:#ffd700}
+  .logo{font-size:1.5rem;font-weight:800;color:#ffd700}.logo a{color:inherit;text-decoration:none}
+  .nav-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
+  .nav-links{display:flex;gap:1rem}
+  nav a{color:#fff;text-decoration:none;margin:0 .7rem;font-weight:600;padding:.5rem;border-radius:4px}
+  nav a:hover,nav a:focus{color:#ffd700;background:rgba(255,215,0,.1)}
   main{max-width:1200px;margin:auto;padding:2rem}
   .hero{background:linear-gradient(135deg,#1a1a1a,#333);color:#fff;padding:4rem 2rem;border-radius:10px;margin-bottom:3rem;text-align:center}
   .hero h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1rem;color:#ffd700}
-  .hero h2{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:1rem;color:#fff}
   .hero p{font-size:1.12rem;color:#f4f4f4;max-width:850px;margin:0 auto 1.5rem}
-  .hero-logo{max-width:400px;width:100%;height:auto;margin-bottom:1rem}
-  .btn{display:inline-block;padding:.85rem 1.5rem;margin:.4rem;border-radius:5px;text-decoration:none;font-weight:800;transition:transform .2s ease}
-  .btn-primary{background:#ffd700;color:#1a1a1a}
-  .btn-secondary{background:transparent;color:#fff;border:2px solid #ffd700}
-  .btn:hover,.btn:focus{transform:translateY(-2px)}
   section{margin:3rem 0}
   h2{font-size:2rem;margin-bottom:1rem;color:#111111}
-  h3{margin-bottom:.5rem;color:#111111}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
-  .card{background:#fffdf9;padding:1.5rem;border-radius:9px;border:2px solid #ffd700;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-  .card p{color:#262626}
-  .cta{background:linear-gradient(135deg,#1a1a1a,#333);color:#fff;padding:3rem 2rem;border-radius:10px;text-align:center;margin:3rem 0}
-  .cta h2{color:#ffd700}
-  .cta a{color:#ffd700}
-  .faq details{border-bottom:1px solid #ddd;padding:1rem 0}
-  .faq summary{font-weight:800;cursor:pointer;color:#111111}
-  .content{background:#f9f4ee;border-radius:9px;padding:2rem}
-  .content p,.content li{margin-bottom:.9rem;color:#1f1f1f}
-  .content ul{padding-left:1.5rem}
-  .project{overflow:hidden}
-  .project img{width:100%;height:auto;display:block;border-radius:6px;margin-bottom:1rem}
-  .badge{display:inline-block;background:#ffd700;color:#1a1a1a;padding:.25rem .7rem;border-radius:4px;font-size:.85rem;font-weight:800}
-  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
-  .project-card{background:#fffdf9;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.1);transition:transform .3s ease,box-shadow .3s ease;border:2px solid #ffd700}
+  h3{font-size:1.3rem;margin-bottom:.75rem;color:#111111}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2rem}
+  .project-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.1);transition:transform .3s ease,box-shadow .3s ease;border:2px solid #ffd700}
   .project-card:hover{transform:translateY(-8px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
-  .project-image{width:100%;height:250px;overflow:hidden;background:#f0ece3;display:flex;align-items:center;justify-content:center}
+  .project-image{width:100%;aspect-ratio:4/3;overflow:hidden;background:#f0ece3;display:flex;align-items:center;justify-content:center}
   .project-image img{width:100%;height:100%;object-fit:cover;display:block}
   .project-info{padding:1.5rem}
-  .project-info h3{color:#111111;margin-bottom:.75rem;font-size:1.15rem}
+  .project-info h3{color:#111111;margin-bottom:.75rem}
   .project-category{display:inline-block;background:#ffd700;color:#1a1a1a;padding:.4rem .9rem;border-radius:5px;font-size:.8rem;font-weight:800;margin-bottom:1rem}
   .project-info p{color:#2b2b2b;font-size:.95rem;line-height:1.6}
+  .content{background:#f9f4ee;border-radius:9px;padding:2rem}
+  .content p{margin-bottom:.9rem;color:#1f1f1f}
+  .btn{display:inline-block;padding:.85rem 1.5rem;margin:.4rem;border-radius:5px;text-decoration:none;font-weight:800;background:#ffd700;color:#1a1a1a;transition:transform .2s ease;border:none;cursor:pointer}
+  .btn:hover{transform:translateY(-2px)}
+  .cta{background:linear-gradient(135deg,#1a1a1a,#333);color:#fff;padding:3rem 2rem;border-radius:10px;text-align:center;margin:3rem 0}
+  .cta h2{color:#ffd700}.cta a{color:#ffd700;text-decoration:underline}
   footer{background:#1a1a1a;color:#fff;padding:2rem;text-align:center;margin-top:3rem}
   footer p{color:#e8e8e8;margin:.35rem}
-  footer a{color:#ffd700}
+  footer a{color:#ffd700;text-decoration:none}
+  footer a:hover{text-decoration:underline}
   @media(max-width:1024px){.gallery{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:768px){header nav{justify-content:center}.logo{width:100%;text-align:center}nav a{margin:.35rem}.hero{padding:3rem 1.25rem}main{padding:1rem}.content{padding:1.25rem}.gallery{grid-template-columns:1fr}}
+  @media(max-width:768px){
+    .nav-toggle{display:block}
+    .nav-links{display:none;position:absolute;top:4rem;left:0;right:0;background:#1a1a1a;flex-direction:column;padding:1rem;gap:0}
+    .nav-links.active{display:flex}
+    header nav{justify-content:space-between}
+    .logo{width:auto}
+    .hero{padding:2rem 1.25rem}
+    main{padding:1rem}
+    .gallery{grid-template-columns:1fr}
+    .content{padding:1.25rem}
+  }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18269641724"></script>
   <script>
@@ -75,21 +75,22 @@
   </script>
 </head>
 <body>
-  <header>
-    <nav aria-label="Primary navigation">
-      <div class="logo"><a href="index.html">BeeRad LLC</a></div>
-      <div>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="privacy-policy.html">Privacy</a>
+  <header role="banner">
+    <nav aria-label="Primary navigation" role="navigation">
+      <div class="logo"><a href="index.html" title="BeeRad LLC Home">BeeRad LLC</a></div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="nav-toggle">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" title="Home">Home</a>
+        <a href="services.html" title="Services">Services</a>
+        <a href="projects.html" title="Projects Gallery">Projects</a>
+        <a href="about.html" title="About">About</a>
+        <a href="index.html#contact" title="Contact">Contact</a>
+        <a href="privacy-policy.html" title="Privacy Policy">Privacy</a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main role="main">
     <section class="hero">
       <h1>BeeRad Equipment Repair Projects</h1>
       <p>Examples of mobile diagnostics, electrical troubleshooting and repair work performed by BeeRad LLC.</p>
@@ -99,91 +100,91 @@
       <h2>Recent Project Portfolio</h2>
       <div class="gallery">
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="AC system not working" src="ac%20after.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="AC system diagnostics and repair" src="ac%20after.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>AC system not working and active open circuit code</h3>
+            <h3>AC System Diagnostics</h3>
             <span class="project-category">Diagnostics</span>
             <p>Customer stated AC not working, found blocked ducts, low on freon and very dirty. Customer complained of an active code and machine derated after diagnosing the issue.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="AC system diagnosis" src="ac%20before.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="AC system inspection" src="ac%20before.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>AC system inspection</h3>
+            <h3>AC System Inspection</h3>
             <span class="project-category">Diagnostics</span>
             <p>Detailed inspection and diagnostic work on AC system components to identify blockages and electrical issues.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="Electrical rewiring" src="small%20electrical.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="Electrical rewiring project" src="small%20electrical.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>Rewiring</h3>
+            <h3>Electrical Rewiring</h3>
             <span class="project-category">Electrical Systems</span>
             <p>Had to diagnose electrical issues and rewire the damaged circuits.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="Loader hydraulic cylinders" src="hydraulic.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="Loader hydraulic cylinder repair" src="hydraulic.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>Loader hydraulic cylinders drifting</h3>
+            <h3>Loader Hydraulic Cylinders</h3>
             <span class="project-category">Hydraulics</span>
             <p>Customer stated loader drift. After diagnosing the hydraulic system, found damaged seal on the cylinder piston caused by a bent rod.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="Engine in-frame repair" src="repair.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="Engine in-frame repair service" src="repair.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>Engine in-frame repair</h3>
+            <h3>Engine In-Frame Repair</h3>
             <span class="project-category">General Repair</span>
             <p>An in-frame engine repair and hand polishing of a crankshaft. Diesel engine.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="Cleaning of AC system" src="service.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="AC system cleaning service" src="service.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>Cleaning of AC system</h3>
-            <span class="project-category">Heating and Air Conditioning</span>
+            <h3>AC System Cleaning</h3>
+            <span class="project-category">Heating & Air Conditioning</span>
             <p>Customer stated AC not working properly. After a few tests, found the AC system needed a new housing and cleaning.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="AC system housing" src="daig.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="AC system housing replacement" src="daig.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>AC system housing replacement</h3>
-            <span class="project-category">Heating and Air Conditioning</span>
+            <h3>AC System Housing Replacement</h3>
+            <span class="project-category">Heating & Air Conditioning</span>
             <p>AC system housing replacement and thorough cleaning of system components.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="Engine service" src="diag%202.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="Engine maintenance service" src="diag%202.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>Engine service</h3>
+            <h3>Engine Maintenance</h3>
             <span class="project-category">Maintenance</span>
             <p>Performing maintenance on a Hino box truck engine.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="Emergency roadside repair" src="tracker%20down.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="Emergency roadside truck repair" src="tracker%20down.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>Emergency call/roadside</h3>
-            <span class="project-category">Replacement of ac compressor and belt</span>
-            <p>Truck down due to locked up ac compressor, BeeRad was able to get him up and going, was able to get a different ac compressor that would bolt up to allow trucker to continue his route.</p>
+            <h3>Emergency Roadside Service</h3>
+            <span class="project-category">AC Compressor & Belt</span>
+            <p>Truck down due to locked up ac compressor. BeeRad was able to get him up and going with a compatible AC compressor to allow trucker to continue his route.</p>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image"><img width="310" height="250" alt="Engine misfire diagnostics" src="louise%20f250.PNG" /></div>
+          <div class="project-image"><img width="400" height="300" alt="Engine misfire diagnostics" src="louise%20f250.PNG" loading="lazy" /></div>
           <div class="project-info">
-            <h3>Engine Diagnostics</h3>
-            <span class="project-category">Misfire</span>
+            <h3>Engine Misfire Diagnostics</h3>
+            <span class="project-category">Diagnostics</span>
             <p>Random cylinder misfire caused by multiple issues with evap system, allowing engine fumes in intake system.</p>
           </div>
         </div>
@@ -193,16 +194,30 @@
     <section class="content">
       <h2>Need Similar Equipment Diagnostics?</h2>
       <p>BeeRad provides mobile diagnostics and repair for farm, construction and off-road equipment in Lubbock and surrounding West Texas areas.</p>
-      <p><a href="tel:+18066329458"><strong>Call (806) 632-9458</strong></a> to discuss your equipment issue.</p>
+      <p><a href="tel:+18066329458" class="btn">Call (806) 632-9458</a></p>
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p><strong>BeeRad LLC</strong> — Mobile Equipment Repair &amp; Diagnostics</p>
     <p>Lubbock, Texas and surrounding West Texas service areas</p>
     <p>Phone: <a href="tel:+18066329458">(806) 632-9458</a> · Email: <a href="mailto:beeradllc@gmail.com">beeradllc@gmail.com</a></p>
     <p><a href="privacy-policy.html">Privacy Policy</a></p>
     <p>&copy; 2026 BeeRad LLC. All rights reserved.</p>
   </footer>
+  <script>
+  document.getElementById('nav-toggle').addEventListener('click',function(){
+  const navLinks=document.getElementById('nav-links');
+  const isActive=navLinks.classList.contains('active');
+  navLinks.classList.toggle('active');
+  this.setAttribute('aria-expanded',!isActive);
+  });
+  document.querySelectorAll('.nav-links a').forEach(link=>{
+  link.addEventListener('click',()=>{
+  document.getElementById('nav-links').classList.remove('active');
+  document.getElementById('nav-toggle').setAttribute('aria-expanded','false');
+  });
+  });
+  </script>
 </body>
 </html>
