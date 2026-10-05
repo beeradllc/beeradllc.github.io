@@ -1,8 +1,27 @@
+# Robots.txt for BeeRad LLC
+# Allow all search engine crawlers
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /*.php$
+Disallow: /cgi-bin/
+
+# Specific rules for common bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://beeradllc.com/sitemap.xml
 
-# Crawl delay (optional)
+# Request crawl delay to reduce server load
 Crawl-delay: 1
+Request-rate: 30/60
